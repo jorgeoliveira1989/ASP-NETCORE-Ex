@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP21", "ASP21\ASP21.csproj", "{2F50FAD6-29EB-49DE-85B3-6CBCB79AA3FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F50FAD6-29EB-49DE-85B3-6CBCB79AA3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F50FAD6-29EB-49DE-85B3-6CBCB79AA3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F50FAD6-29EB-49DE-85B3-6CBCB79AA3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F50FAD6-29EB-49DE-85B3-6CBCB79AA3FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C06E9479-D54E-4867-AE0A-F8DE516B26EE}
+	EndGlobalSection
+EndGlobal
