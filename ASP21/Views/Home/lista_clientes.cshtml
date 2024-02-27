@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ASP21.Models.Cliente>
+@{
+    ViewData["subtitle"] = "Clientes Registados";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="titulo">@ViewBag.subtitle</h2>
+    </div>
+    <div class="col-6 text-right">
+        <a asp-controller="home" asp-action="novo_cliente" class="btn btn-primary">Add Novo Cliente</a>
+    </div>
+</div>
+
+<!-- Apresentação dos dados dos clientes -->
+

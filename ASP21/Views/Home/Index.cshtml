@@ -5,3 +5,16 @@
 
 <h2 class="titulo">@ViewBag.subtitle</h2>
 <hr />
+
+<div class="row">
+    <div class="col-4 text-center card bg-light p-5 m-2">
+        <p class="text-center p-3">Vizualização de Clientes, registados na aplicação</p>
+        <a asp-controller="home" asp-action="lista_clientes" class="btn btn-primary">Ver lista de Clientes</a>
+    </div>
+
+    <div class="col-4 text-center card bg-light p-5 m-2">
+        <p class="text-center p-3">ADICIONAR novos Clientes na aplicação</p>
+        <a asp-controller="home" asp-action="adicionar_clientes" class="btn btn-primary">Adicionar Clientes</a>
+    </div>
+
+</div>
