@@ -12,5 +12,22 @@
     </div>
 </div>
 
+@if (Model.Count() == 0)
+{
+    <p>Não existem Clientes registados... </p>
+}
+else{
+    <!-- Apresentar a tabela com os clientes registados -->
+
+    @foreach (var cliente in Model)
+    {
+        <p>@cliente.nome @cliente.telefone</p>
+    }
+    
+}
 <!-- Apresentação dos dados dos clientes -->
 
+<div>
+    <a asp-controller="home" asp-action="Index" class="btn btn-danger">Voltar</a>
+    
+</div>

@@ -16,5 +16,11 @@ namespace ASP21.Controllers
             //APresenta os clientes Registados na Aplicação
             return View(Dados.todos_os_clientes());
         }
+
+        public IActionResult adicionar_clientes()
+        {
+            //Adicionar um novo cliente
+            return View();
+        }
     }
 }
