@@ -8,7 +8,7 @@
         <h2 class="titulo">@ViewBag.subtitle</h2>
     </div>
     <div class="col-6 text-right">
-        <a asp-controller="home" asp-action="novo_cliente" class="btn btn-primary">Add Novo Cliente</a>
+        <a asp-controller="home" asp-action="adicionar_clientes" class="btn btn-primary">Add Novo Cliente</a>
     </div>
 </div>
 
@@ -18,14 +18,29 @@
 }
 else{
     <!-- Apresentar a tabela com os clientes registados -->
-
-    @foreach (var cliente in Model)
-    {
-        <p>@cliente.nome @cliente.telefone</p>
-    }
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cliente in Model)
+            {
+                <tr>
+                    <td>@cliente.nome</td>
+                    <td>@cliente.telefone</td>
+                    <td>...</td>
+                </tr>
+            }
+        </tbody>
+    </table>
     
 }
 <!-- Apresentação dos dados dos clientes -->
+<p><b>Existem @Model.Count().ToString() Registos.</b></p>
 
 <div>
     <a asp-controller="home" asp-action="Index" class="btn btn-danger">Voltar</a>

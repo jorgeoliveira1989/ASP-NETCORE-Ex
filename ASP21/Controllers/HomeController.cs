@@ -22,5 +22,15 @@ namespace ASP21.Controllers
             //Adicionar um novo cliente
             return View();
         }
+
+        [HttpPost]
+        public IActionResult adicionar_cliente(Cliente cliente)
+        {
+            //Guardar os dados do novo cliente
+            Dados.adicionar_cliente(cliente);
+
+            return RedirectToAction("adicionar_clientes");
+
+        }
     }
 }
