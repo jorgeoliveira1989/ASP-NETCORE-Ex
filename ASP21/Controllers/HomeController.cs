@@ -32,5 +32,26 @@ namespace ASP21.Controllers
             return RedirectToAction("adicionar_clientes");
 
         }
+
+        public IActionResult editar_cliente(int id)
+        {
+            //editar os dados dos cliente que foi escolhido
+
+            return View(Dados.dados_cliente(id));
+        }
+
+        [HttpPost]
+        public IActionResult editar_cliente(Cliente c)
+        {
+            Dados.editar_cliente(c);
+            return RedirectToAction("lista_clientes");
+        }
+
+        public IActionResult eliminar_cliente(int id)
+        {
+            //Eliminar o cliente escolhido
+            Dados.eliminar_cliente(id);
+            return RedirectToAction("lista_clientes");
+        }
     }
 }

@@ -1,0 +1,32 @@
+﻿@model ASP21.Models.Cliente
+@{
+    ViewData["subtitle"] = "Editar Cliente";
+}
+
+<h2 class="titulo">@ViewBag.subtitle</h2>
+<hr />
+
+<div class="card bd-light p-5">
+
+    <form asp-controller="home" asp-action="editar_cliente">
+        <div class="form-group">
+        @Html.HiddenFor(Model => Model.id)
+
+            @Html.LabelFor(Model => Model.nome)
+            <br />
+            @Html.EditorFor(Model => Model.nome)
+
+        </div>
+
+        <div class="form-group">
+
+            @Html.LabelFor(Model => Model.telefone)
+            <br />
+            @Html.EditorFor(Model => Model.telefone)
+
+        </div>
+        <a asp-asp-controller="home" asp-action="index" class="btn btn-danger">Voltar</a>
+        <button class="btn btn-primary">Guardar Dados</button>
+    </form>
+</div>
+

@@ -32,7 +32,10 @@ else{
                 <tr>
                     <td>@cliente.nome</td>
                     <td>@cliente.telefone</td>
-                    <td>...</td>
+                    <td class="text-right">
+                        <a asp-action="editar_cliente" asp-controller="home" asp-route-id="@cliente.id" class="btn btn-success"><i class="fa fa-pencil"></i> Editar</a> 
+                        <a asp-action="eliminar_cliente" asp-controller="home" asp-route-id="@cliente.id" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</a>
+                    </td>
                 </tr>
             }
         </tbody>
@@ -44,5 +47,4 @@ else{
 
 <div>
     <a asp-controller="home" asp-action="Index" class="btn btn-danger">Voltar</a>
-    
 </div>
